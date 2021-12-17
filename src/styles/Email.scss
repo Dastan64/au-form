@@ -1,0 +1,45 @@
+.form {
+  &__email-container {
+    margin-top: 20px;
+  }
+  .email {
+    &__container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    &__note {
+      color: #999;
+      font-size: 12px;
+      margin-left: 10px;
+      @media screen and (max-width: 576px) {
+        margin: 10px 0 0 0;
+      }
+    }
+    &__field {
+      display: block;
+      padding: 10px;
+      border: none;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      font-size: 16px;
+      width: 310px;
+      font-family: "GTEestiProText Regular", Arial, Helvetica, sans-serif;
+      @media screen and (max-width: 375px) {
+        width: 280px;
+      }
+      &--invalid {
+        border: 2px solid #ff0000;
+      }
+    }
+    &__error-caption {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #ff0000;
+    }
+  }
+}

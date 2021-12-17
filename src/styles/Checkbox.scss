@@ -1,0 +1,20 @@
+.checkbox {
+  &__container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__field {
+    width: 20px;
+    height: 20px;
+  }
+  &__label {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  &__error-caption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+  }
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "GTEestiProText Regular";
+  src: url(../fonts/GTEestiProText-Regular.ttf) format("truetype"); /* все современные браузеры */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "GTEestiProText Regular", Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}

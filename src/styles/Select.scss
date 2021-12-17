@@ -1,0 +1,26 @@
+.select {
+  &__field {
+    display: block;
+    margin-top: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    width: 336px;
+    font-size: 1rem;
+    border: none;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    font-family: "GTEestiProText Regular", Arial, Helvetica, sans-serif;
+    @media screen and (max-width: 375px) {
+      width: 280px;
+    }
+  }
+  &__option {
+    cursor: pointer;
+  }
+  &__error-caption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ff0000;
+  }
+}
