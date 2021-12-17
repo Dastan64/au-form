@@ -36,7 +36,7 @@ const Password = ({ values, handleChange, errors }) => {
           <input
             className={
               'password__field ' +
-              (errors.password ? 'password__field--invalid' : '')
+              (errors.confirmPassword ? 'password__field--invalid' : '')
             }
             type='password'
             name='confirmPassword'
@@ -50,9 +50,6 @@ const Password = ({ values, handleChange, errors }) => {
             ошибки.
           </p>
         </div>
-        {errors.confirmPassword && (
-          <p className='password__error-caption'>{errors.confirmPassword}</p>
-        )}
       </div>
     </div>
   );

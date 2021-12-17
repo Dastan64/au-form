@@ -3,7 +3,7 @@ export default function validateForm(values) {
   if (!values.email) {
     errors.email = 'Укажите E-mail';
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = 'Неверный E-mail';
+    errors.email = 'Введите корректный e-mail';
   }
   if (!values.password) {
     errors.password = 'Укажите пароль';
