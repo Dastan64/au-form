@@ -15,7 +15,6 @@ const useForm = () => {
     password: '',
     confirmPassword: '',
     email: '',
-    isCheckboxChecked: '',
   });
 
   const handleChange = (e) => {
@@ -28,6 +27,7 @@ const useForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validateForm(values));
+    console.log(JSON.stringify(values));
   };
 
   useEffect(() => {

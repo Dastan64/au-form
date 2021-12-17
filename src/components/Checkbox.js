@@ -1,6 +1,6 @@
 import '../styles/Checkbox.scss';
 
-const Checkbox = ({ handleChange, errors }) => {
+const Checkbox = ({ handleChange }) => {
   return (
     <div className='form__checkbox-container checkbox'>
       <div className='checkbox__container'>
@@ -15,9 +15,6 @@ const Checkbox = ({ handleChange, errors }) => {
           Я согласен принимать актуальную информацию на e-mail
         </label>
       </div>
-      {errors.isCheckboxChecked === false && (
-        <p className='checkbox__error-caption'>Отметьте чекбокс!</p>
-      )}
     </div>
   );
 };

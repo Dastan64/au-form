@@ -19,7 +19,7 @@ const Form = () => {
       <Password values={values} handleChange={handleChange} errors={errors} />
       <hr />
       <Email values={values} handleChange={handleChange} errors={errors} />
-      <Checkbox handleChange={handleChange} errors={errors} />
+      <Checkbox handleChange={handleChange} />
       <button className='form__btn' type='submit'>
         Отправить
       </button>

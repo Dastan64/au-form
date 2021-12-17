@@ -19,9 +19,6 @@ export default function validateForm(values) {
     console.log('Пароли не совпадают');
   }
 
-  if (values.checkboxState === 'off') {
-    errors.isCheckboxChecked = false;
-  }
   if (values.city === 'Выберите город') {
     errors.cityError = 'Пожалуйста, выберите город из списка.';
   }
